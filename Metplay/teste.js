@@ -1,13 +1,28 @@
-window.onload = function () {
-  const carousel = document.getElementById('carouselExampleAutoplaying');
 
-  console.log("carousel:", carousel);
 
-  carousel.addEventListener('slide.bs.carousel', function () {
-    console.log("ANTES 🔥");
-  });
+const carousel = document.getElementById('carouselExampleAutoplaying');
 
-  carousel.addEventListener('slid.bs.carousel', function () {
-    console.log("DEPOIS 🔥");
-  });
-};
+carousel.addEventListener('slid.bs.carousel', function (event) {
+    const i = event.to;
+
+    if (i == 0) {
+        document.getElementById("cardTitle").innerText = "Outono Chegou!";
+        document.getElementById("cardText").innerText = "Descontos de até 70% em jogos incríveis. Corre que é por tempo limitado!";
+
+    }
+    if (i == 1) {
+        document.getElementById("cardTitle").innerText = "Forza Horizon 5";
+        document.getElementById("cardText").innerText = "Explore as paisagens vibrantes de mundo aberto do México com diversão e velocidade sem limites com os melhores carros do mundo.";
+    }
+    if (i == 2) {
+        document.getElementById("cardTitle").innerText = "Resident Evil: Requiem";
+        document.getElementById("cardText").innerText = "Réquiem para os mortos. Pesadelo para os vivos. Prepare-se para escapar da morte em uma experiência arrepiante e de tirar o fôlego.";
+
+    }
+    if (i == 3) {
+        document.getElementById("cardTitle").innerText = "The Elder Scrolls V: Skyrim";
+        document.getElementById("cardText").innerText = "Vencedor de mais de 200 prêmios de Jogo do Ano, The Elder Scrolls V: Skyrim Special Edition traz vida à fantasia épica com detalhes deslumbrantes. A Special Edition inclui o jogo aclamado pela crítica e complementos com novos recursos.";
+
+    }
+
+});
