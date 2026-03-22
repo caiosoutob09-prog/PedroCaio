@@ -8,7 +8,7 @@ carousel.addEventListener('slid.bs.carousel', function (event) {
     if (i == 0) {
         document.getElementById("cardTitle").innerText = "Outono Chegou!";
         document.getElementById("cardText").innerText = "Descontos de até 70% em jogos incríveis. Corre que é por tempo limitado!";
-        document.getElementById("cardImg").src = "Ofert1.png";
+        document.getElementById("cardImg").src = "capaoutono.png";
     }
     if (i == 1) {
         document.getElementById("cardTitle").innerText = "Forza Horizon 5";
