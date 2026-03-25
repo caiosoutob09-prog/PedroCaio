@@ -9,6 +9,15 @@ $(document).ready(function () {
         $(".RPG").hide();
 
     });
+        $("#btnterror").click(function () {
+
+        $(".Terror").show();
+        $(".Ação").hide();
+        $(".Aventura").hide();
+        $(".Esporte").hide();
+        $(".RPG").hide();
+
+    });
      $("#btnaventura").click(function () {
 
         $(".Aventura").show();
@@ -34,6 +43,15 @@ $(document).ready(function () {
         $(".Aventura").hide();
         $(".Esporte").hide();
         $(".Ação").hide();
+
+    });
+         $("#btnrmv").click(function () {
+
+        $(".RPG").show();
+        $(".Terror").show();
+        $(".Aventura").show();
+        $(".Esporte").show();
+        $(".Ação").show();
 
     });
 });
