@@ -9,11 +9,16 @@ carousel.addEventListener('slid.bs.carousel', function (event) {
         document.getElementById("cardTitle").innerText = "Outono Chegou!";
         document.getElementById("cardText").innerText = "Descontos de até 70% em jogos incríveis. Corre que é por tempo limitado!";
         document.getElementById("cardImg").src = "capaoutono.png";
+        document.getElementById("btnbuy").href = "Ofertaoutono.html";
+
     }
     if (i == 1) {
         document.getElementById("cardTitle").innerText = "Forza Horizon 5";
         document.getElementById("cardText").innerText = "Explore as paisagens vibrantes de mundo aberto do México com diversão e velocidade sem limites com os melhores carros do mundo.";
         document.getElementById("cardImg").src = "capa1.jpg";
+        document.getElementById("btnbuy").href = "Metplaycarrinhol.html";
+
+
     }
     if (i == 2) {
         document.getElementById("cardTitle").innerText = "Resident Evil: Requiem";
@@ -24,6 +29,7 @@ carousel.addEventListener('slid.bs.carousel', function (event) {
         document.getElementById("cardTitle").innerText = "The Elder Scrolls V: Skyrim";
         document.getElementById("cardText").innerText = "Vencedor de mais de 200 prêmios de Jogo do Ano, The Elder Scrolls V: Skyrim Special Edition traz vida à fantasia épica com detalhes deslumbrantes.";
         document.getElementById("cardImg").src = "capa3.jpg";
+        document.getElementById("btnbuy").href = "Metplaycarrinhol.html";
     }
 
 });

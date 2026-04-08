@@ -6,7 +6,11 @@ $(document).ready(function () {
         title: "Adicionado a lista de desejo!",
         icon: "success",
         draggable: true
+
+        
     });
+
+    
 
 
     });
