@@ -13,6 +13,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="perfil.js"></script>
 </head>
 
 <body style="background-color: rgb(18, 19, 22);">
@@ -63,28 +64,52 @@
         </div>
     </nav>
 
-    <div class="container vh-100 d-flex ">
+    <div class="container d-flex ">
       <div class="row justify-content-center w-100">
 
-        <div class="col-md-8 d-flex gap-4" style="margin-top: 100px;">
+        <div class="col-md-8 card bg-dark border border-dashed" style="margin-top: 100px; padding: 20px;">
 
-          <!-- Imagem -->
-          <img class="rounded-circle bg-light shadow-lg" src="user-30-ecommerce-icon-outline-style.png.webp" alt=""
-            width="150" height="150">
+          <div class="d-flex justify-content-between align-items-start w-100">
 
-          <!-- Texto -->
-          <div>
-            <h2 class="mb-1 text-light"><b>Usuario</b></h2>
-            <p class="text-muted mb-0 text-light"></p>
+            <div class="d-flex gap-4">
+              <img class="rounded-circle bg-light shadow-lg" src="Deafult PFP _ @davy3k.jpg" alt="" width="150"
+                height="150">
+
+              <div class="d-flex flex-column justify-content-center">
+                <h2 class="mb-3 text-light"><b>Usuario</b></h2>
+                <div class="d-flex gap-4">
+                  <p class="mb-0 text-light"><b><i class="bi bi-stars"></i> EXP:</b> 0</p>
+                  <p class="mb-0 text-light"><b><i class="bi bi-award-fill"></i> Conquistas:</b> 0</p>
+                  <p class="mb-0 text-light"><b><i class="bi bi-fire"></i> Platinas:</b> 0</p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <button type="button" class="btn btn-outline-light btn-sm" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Left popover">
+                <i class="bi bi-pencil-fill"></i> Editar perfil
+              </button>
+            </div>
+
           </div>
-
         </div>
-
+        <div style="margin-top: 50px;">
+          <ul class="nav nav-underline text-light">
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" id="btnjogos">Jogos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" aria-current="page" id="btnamigos">Amigos</a>
+            </li>
+        </div>
+        <div class="jogos">
+          <p class="text-light" style="margin-top: 50px;">Nenhum jogo jogado recentemente. Começe uma nova experiencia para que ela apareça nesta aba.</p>
+        </div>
+        <div class="amigos">
+          <p class="text-light" style="margin-top: 50px;">Nenhum amigo. Ao adicionar novos amigos eles apareseram nesta aba.</p>
+        </div>
       </div>
     </div>
-
-  </div>
-  </div>
   </div>
   </div>
 
