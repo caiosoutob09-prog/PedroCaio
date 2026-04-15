@@ -14,30 +14,67 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="filtro.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="procurar.css">
 </head>
 
 <body style="background-color: rgb(18, 19, 22);">
 
     <div>
-        <nav class="navbar navbar-expand-lg text-light bg-dark bg-opacity-80 border border-black ">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-opacity-80 border border-black fixed-top">
             <div class="container-fluid">
+
+                <a class="navbar-brand d-flex align-items-center text-light" href="Metplayhome.html">
+                    <img src="Lgompwt_sf.png" width="30" height="24" class="me-2">
+                    <b>PLAY</b>met
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <img src="Lgompwt_sf.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-                    <a href="Metplayhome.html " class="nav-link text-light"> <b>PLAY</b>met </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
 
                     <div class="navbar-nav">
                         <a class="nav-link active text-light" aria-current="page" href="Metplayhome.html">Descobrir</a>
                         <a class="nav-link text-light" href="Metplayprocurar.html">Procurar</a>
                         <a class="nav-link text-light" href="Metplaynovidades.html">Novidades</a>
-
                     </div>
-                    <div class="navbar-nav ms-auto">
-                        <!-- Example split danger button -->
+
+                    <div class="ms-auto d-block d-sm-none align-items-center">
+                        <div class="btn-group border border-light">
+
+                            <div class="btn-group ">
+                                <a class="btn text-light" href="Metplayperfil.html" role="button"><i
+                                        class="bi bi-person-circle"></i>
+                                    Perfil</a>
+                                <button type="button" class="btn text-light dropdown-toggle dropdown-toggle-split"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span class="visually-hidden"></span>
+                                </button>
+                                <ul class="dropdown-menu text-light bg-dark bg-opacity-80 border border-black ">
+                                    <li><a class="dropdown-item text-light bg-dark bg-opacity-80"
+                                            href="Metplaybliblio.html"><i class="bi bi-book-fill"></i> Bliblioteca </a>
+                                    </li>
+                                    <li><a class="dropdown-item text-light bg-dark bg-opacity-80"
+                                            href="Metplaydesejo.html"><i class="bi bi-bookmark-fill"></i> Lista de
+                                            desejos</a></li>
+                                    <li><a class="dropdown-item text-light bg-dark bg-opacity-80"
+                                            href="Metplaycarrinhol.html"><i class="bi bi-cart-fill"></i> Carrinho</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider border-black">
+                                    </li>
+                                    <li><a class="dropdown-item text-light bg-dark bg-opacity-80"
+                                            href="Metplayload.html"><i class="bi bi-arrow-bar-down"></i> Dowload</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ms-auto d-none d-lg-flex align-items-center">
                         <div class="btn-group border border-light">
 
                             <div class="btn-group dropstart">
@@ -63,13 +100,13 @@
                                     </li>
                                 </ul>
                                 <a class="btn text-light" href="Metplayperfil.html" role="button"><i
-                                        class="bi bi-person-circle"></i> Perfil</a>
+                                        class="bi bi-person-circle"></i>
+                                    Perfil</a>
                             </div>
                         </div>
                     </div>
                 </div>
         </nav>
-
 
         <div class="row">
             <div class="col-2"></div>
@@ -78,138 +115,138 @@
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
                     <button class="btn btn-outline-primary" type="submit">Procurar</button>
                 </form>
+                <div id="gamelist">
+
+                    <figure class="figure Ação col" style="margin-top: 20px;">
+                        <img src="Grand_Theft_Auto_V_capa.png" class="figure-img img-fluid rounded " alt="..."
+                            style="width: 200px; height: 280px;">
+                        <figcaption class="figure-caption text-light">GTA V</figcaption>
+                    </figure>
 
 
-                <figure class="figure Ação col" style="margin-top: 20px;">
-                    <img src="Grand_Theft_Auto_V_capa.png" class="figure-img img-fluid rounded " alt="..."
-                        style="width: 200px; height: 280px;">
-                    <figcaption class="figure-caption text-light">GTA V</figcaption>
-                </figure>
+                    <figure class="figure Aventura col">
+                        <img src="DS2-capa.png" class="figure-img img-fluid rounded" alt="..."
+                            style="width: 200px; height: 280px;">
+                        <figcaption class="figure-caption text-light">Death Stranding 2</figcaption>
+                    </figure>
 
 
-                <figure class="figure Aventura col">
-                    <img src="DS2-capa.png" class="figure-img img-fluid rounded" alt="..."
-                        style="width: 200px; height: 280px;">
-                    <figcaption class="figure-caption text-light">Death Stranding 2</figcaption>
-                </figure>
+                    <figure class="figure RPG col">
+                        <img src="Elden_Ring_capa.jpg" class="figure-img img-fluid rounded" alt="..."
+                            style="width: 200px; height: 280px;">
+                        <figcaption class="figure-caption text-light">Elden Ring</figcaption>
+                    </figure>
 
 
-                <figure class="figure RPG col">
-                    <img src="Elden_Ring_capa.jpg" class="figure-img img-fluid rounded" alt="..."
-                        style="width: 200px; height: 280px;">
-                    <figcaption class="figure-caption text-light">Elden Ring</figcaption>
-                </figure>
+                    <figure class="figure Aventura col">
+                        <img src="hfw-capa.jpg" class="figure-img img-fluid rounded" alt="..."
+                            style="width: 200px; height: 280px;">
+                        <figcaption class="figure-caption text-light">Horizon Forbidden West</figcaption>
+                    </figure>
 
+                    <figure class="figure Aventura col">
+                        <img src="Ghost_of_Tsushima_capa.png" class="figure-img img-fluid rounded" alt="..."
+                            style="width: 200px; height: 280px;">
+                        <figcaption class="figure-caption text-light">Ghost of Tsushima</figcaption>
+                    </figure>
 
-                <figure class="figure Aventura col">
-                    <img src="hfw-capa.jpg" class="figure-img img-fluid rounded" alt="..."
-                        style="width: 200px; height: 280px;">
-                    <figcaption class="figure-caption text-light">Horizon Forbidden West</figcaption>
-                </figure>
+                    <figure class="figure Ação col">
+                        <img src="BMW- Capa.jpg" class="figure-img img-fluid rounded" alt="..."
+                            style="width: 200px; height: 280px;">
+                        <figcaption class="figure-caption text-light">Black Myth:Wukong</figcaption>
+                    </figure>
 
-                <figure class="figure Aventura col">
-                    <img src="Ghost_of_Tsushima_capa.png" class="figure-img img-fluid rounded" alt="..."
-                        style="width: 200px; height: 280px;">
-                    <figcaption class="figure-caption text-light">Ghost of Tsushima</figcaption>
-                </figure>
+                    <figure class="figure Esporte col">
+                        <img src="Skate-3-Boxart.jpg" class="figure-img img-fluid rounded" alt="..."
+                            style="width: 200px; height: 280px;">
+                        <figcaption class="figure-caption text-light">Skate 3</figcaption>
+                    </figure>
 
-                <figure class="figure Ação col">
-                    <img src="BMW- Capa.jpg" class="figure-img img-fluid rounded" alt="..."
-                        style="width: 200px; height: 280px;">
-                    <figcaption class="figure-caption text-light">Black Myth:Wukong</figcaption>
-                </figure>
+                    <figure class="figure Esporte col">
+                        <img src="EA_FC_26_capa.jpg" class="figure-img img-fluid rounded" alt="..."
+                            style="width: 200px; height: 280px;">
+                        <figcaption class="figure-caption text-light">EA Sports FC 26</figcaption>
+                    </figure>
 
-                <figure class="figure Esporte col">
-                    <img src="Skate-3-Boxart.jpg" class="figure-img img-fluid rounded" alt="..."
-                        style="width: 200px; height: 280px;">
-                    <figcaption class="figure-caption text-light">Skate 3</figcaption>
-                </figure>
+                    <figure class="figure RPG col">
+                        <img src="The_Elder_Scrolls_5_Skyrim_capa.png" figure-img img-fluid rounded" alt="..."
+                            style="width: 200px; height: 280px;">
+                        <figcaption class="figure-caption text-light">The Elder Scroll V: Skyrim</figcaption>
+                    </figure>
 
-                <figure class="figure Esporte col">
-                    <img src="EA_FC_26_capa.jpg" class="figure-img img-fluid rounded" alt="..."
-                        style="width: 200px; height: 280px;">
-                    <figcaption class="figure-caption text-light">EA Sports FC 26</figcaption>
-                </figure>
+                    <figure class="figure Terror col">
+                        <img src="Outlast_Cover_Art.jpg" class="figure-img img-fluid rounded" alt="..."
+                            style="width: 200px; height: 280px;">
+                        <figcaption class="figure-caption text-light">Outlast</figcaption>
+                    </figure>
 
-                <figure class="figure RPG col">
-                    <img src="The_Elder_Scrolls_5_Skyrim_capa.png" figure-img img-fluid rounded" alt="..."
-                        style="width: 200px; height: 280px;">
-                    <figcaption class="figure-caption text-light">The Elder Scroll V: Skyrim</figcaption>
-                </figure>
+                    <figure class="figure Ação col">
+                        <img src="The_Last_of_Us_Remastered.png" class="figure-img img-fluid rounded" alt="..."
+                            style="width: 200px; height: 280px;">
+                        <figcaption class="figure-caption text-light">The Last Of Us Remastered</figcaption>
+                    </figure>
 
-                <figure class="figure Terror col">
-                    <img src="Outlast_Cover_Art.jpg" class="figure-img img-fluid rounded" alt="..."
-                        style="width: 200px; height: 280px;">
-                    <figcaption class="figure-caption text-light">Outlast</figcaption>
-                </figure>
+                    <figure class="figure Ação col">
+                        <img src="Spider-Man_2_2023_capa.jpg" class="figure-img img-fluid rounded" alt="..."
+                            style="width: 200px; height: 280px;">
+                        <figcaption class="figure-caption text-light">Marvels: Spider-Man 2</figcaption>
+                    </figure>
 
-                <figure class="figure Ação col">
-                    <img src="The_Last_of_Us_Remastered.png" class="figure-img img-fluid rounded" alt="..."
-                        style="width: 200px; height: 280px;">
-                    <figcaption class="figure-caption text-light">The Last Of Us Remastered</figcaption>
-                </figure>
+                    <figure class="figure Aventura col">
+                        <img src="Red_Dead_Redemption_2.png" class="figure-img img-fluid rounded" alt="..."
+                            style="width: 200px; height: 280px;">
+                        <figcaption class="figure-caption text-light">Red Dead Redemption 2</figcaption>
+                    </figure>
 
-                <figure class="figure Ação col">
-                    <img src="Spider-Man_2_2023_capa.jpg" class="figure-img img-fluid rounded" alt="..."
-                        style="width: 200px; height: 280px;">
-                    <figcaption class="figure-caption text-light">Marvels: Spider-Man 2</figcaption>
-                </figure>
+                    <figure class="figure RPG col">
+                        <img src="Baldur's_Gate_III_Larian_Studios_key_art.png" class="figure-img img-fluid rounded"
+                            alt="..." style="width: 200px; height: 280px;">
+                        <figcaption class="figure-caption text-light">Baldurs Gate III</figcaption>
+                    </figure>
 
-                <figure class="figure Aventura col">
-                    <img src="Red_Dead_Redemption_2.png" class="figure-img img-fluid rounded" alt="..."
-                        style="width: 200px; height: 280px;">
-                    <figcaption class="figure-caption text-light">Red Dead Redemption 2</figcaption>
-                </figure>
+                    <figure class="figure Ação col">
+                        <img src="God_of_War_Ragnarök_capa.jpg" class="figure-img img-fluid rounded" alt="..."
+                            style="width: 200px; height: 280px;">
+                        <figcaption class="figure-caption text-light">God of War: Ragnarok</figcaption>
+                    </figure>
 
-                <figure class="figure RPG col">
-                    <img src="Baldur's_Gate_III_Larian_Studios_key_art.png" class="figure-img img-fluid rounded"
-                        alt="..." style="width: 200px; height: 280px;">
-                    <figcaption class="figure-caption text-light">Baldurs Gate III</figcaption>
-                </figure>
+                    <figure class="figure Terror col">
+                        <img src="RE7_capa.jpg" class="figure-img img-fluid rounded" alt="..."
+                            style="width: 200px; height: 280px;">
+                        <figcaption class="figure-caption text-light">Resident Evil 7: Biohazard</figcaption>
+                    </figure>
 
-                <figure class="figure Ação col">
-                    <img src="God_of_War_Ragnarök_capa.jpg" class="figure-img img-fluid rounded" alt="..."
-                        style="width: 200px; height: 280px;">
-                    <figcaption class="figure-caption text-light">God of War: Ragnarok</figcaption>
-                </figure>
+                    <figure class="figure Aventura col">
+                        <img src="Uncharted_4_capa.png" class="figure-img img-fluid rounded" alt="..."
+                            style="width: 200px; height: 280px;">
+                        <figcaption class="figure-caption text-light">Uncharted 4: A Thief's End</figcaption>
+                    </figure>
 
-                <figure class="figure Terror col">
-                    <img src="RE7_capa.jpg" class="figure-img img-fluid rounded" alt="..."
-                        style="width: 200px; height: 280px;">
-                    <figcaption class="figure-caption text-light">Resident Evil 7: Biohazard</figcaption>
-                </figure>
+                    <figure class="figure Esporte col">
+                        <img src="Capa_de_Forza_Horizon_5.jpg" class="figure-img img-fluid rounded" alt="..."
+                            style="width: 200px; height: 280px;">
+                        <figcaption class="figure-caption text-light">Forza Horizon 5</figcaption>
+                    </figure>
 
-                <figure class="figure Aventura col">
-                    <img src="Uncharted_4_capa.png" class="figure-img img-fluid rounded" alt="..."
-                        style="width: 200px; height: 280px;">
-                    <figcaption class="figure-caption text-light">Uncharted 4: A Thief's End</figcaption>
-                </figure>
+                    <figure class="figure Terror col">
+                        <img src="Silent_Hill_2_2024_capa.png" class="figure-img img-fluid rounded" alt="..."
+                            style="width: 200px; height: 280px;">
+                        <figcaption class="figure-caption text-light">Silent Hill 2</figcaption>
+                    </figure>
 
-                <figure class="figure Esporte col">
-                    <img src="Capa_de_Forza_Horizon_5.jpg" class="figure-img img-fluid rounded" alt="..."
-                        style="width: 200px; height: 280px;">
-                    <figcaption class="figure-caption text-light">Forza Horizon 5</figcaption>
-                </figure>
+                    <figure class="figure Aventura col">
+                        <img src="Tr2012cover.jpg" class="figure-img img-fluid rounded" alt="..."
+                            style="width: 200px; height: 280px;">
+                        <figcaption class="figure-caption text-light">Tomb raider</figcaption>
+                    </figure>
 
-                <figure class="figure Terror col">
-                    <img src="Silent_Hill_2_2024_capa.png" class="figure-img img-fluid rounded" alt="..."
-                        style="width: 200px; height: 280px;">
-                    <figcaption class="figure-caption text-light">Silent Hill 2</figcaption>
-                </figure>
-
-                <figure class="figure Aventura col">
-                    <img src="Tr2012cover.jpg" class="figure-img img-fluid rounded" alt="..."
-                        style="width: 200px; height: 280px;">
-                    <figcaption class="figure-caption text-light">Tomb raider</figcaption>
-                </figure>
-
-                <figure class="figure Ação col">
-                    <img src="Far_cry_3_box_art.jpg" class="figure-img img-fluid rounded" alt="..."
-                        style="width: 200px; height: 280px;">
-                    <figcaption class="figure-caption text-light">Far cry 3</figcaption>
-                </figure>
+                    <figure class="figure Ação col">
+                        <img src="Far_cry_3_box_art.jpg" class="figure-img img-fluid rounded" alt="..."
+                            style="width: 200px; height: 280px;">
+                        <figcaption class="figure-caption text-light">Far cry 3</figcaption>
+                    </figure>
+                </div>
             </div>
-
             <div class="col" style="margin-top: 100px;">
                 <div class="card text-center mb-3 text-light bg-dark bg-opacity-80 border border-black "
                     style="width: 18rem;">

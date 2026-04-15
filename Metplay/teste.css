@@ -1,0 +1,15 @@
+.mobile {
+    display: none;
+}
+
+@media(max-width: 768px) {
+    #ofertas {
+        display: none;
+
+    }
+
+    .mobile {
+        display: flex;
+        margin-top: 20px;
+    }
+}

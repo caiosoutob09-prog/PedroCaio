@@ -14,30 +14,64 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="https://cdn.jsdelivr.net"></script>
-  <script src="alerta.js"></script>
+  <script src="desejo.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="nov.css">
+
 </head>
 
 <body style="background-color: rgb(18, 19, 22);">
 
   <div>
-    <nav class="navbar navbar-expand-lg text-light bg-dark bg-opacity-80 border border-black ">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-opacity-80 border border-black fixed-top">
       <div class="container-fluid">
+
+        <a class="navbar-brand d-flex align-items-center text-light" href="Metplayhome.html">
+          <img src="Lgompwt_sf.png" width="30" height="24" class="me-2">
+          <b>PLAY</b>met
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <img src="Lgompwt_sf.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-          <a href="Metplayhome.html " class="nav-link text-light"> <b>PLAY</b>met </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
 
           <div class="navbar-nav">
             <a class="nav-link active text-light" aria-current="page" href="Metplayhome.html">Descobrir</a>
             <a class="nav-link text-light" href="Metplayprocurar.html">Procurar</a>
             <a class="nav-link text-light" href="Metplaynovidades.html">Novidades</a>
           </div>
-          <div class="navbar-nav ms-auto">
-            <!-- Example split danger button -->
+
+          <div class="ms-auto d-block d-sm-none align-items-center">
+            <div class="btn-group border border-light">
+
+              <div class="btn-group ">
+                <a class="btn text-light" href="Metplayperfil.html" role="button"><i class="bi bi-person-circle"></i>
+                  Perfil</a>
+                <button type="button" class="btn text-light dropdown-toggle dropdown-toggle-split"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="visually-hidden"></span>
+                </button>
+                <ul class="dropdown-menu text-light bg-dark bg-opacity-80 border border-black ">
+                  <li><a class="dropdown-item text-light bg-dark bg-opacity-80" href="Metplaybliblio.html"><i
+                        class="bi bi-book-fill"></i> Bliblioteca </a></li>
+                  <li><a class="dropdown-item text-light bg-dark bg-opacity-80" href="Metplaydesejo.html"><i
+                        class="bi bi-bookmark-fill"></i> Lista de desejos</a></li>
+                  <li><a class="dropdown-item text-light bg-dark bg-opacity-80" href="Metplaycarrinhol.html"><i
+                        class="bi bi-cart-fill"></i> Carrinho</a></li>
+                  <li>
+                    <hr class="dropdown-divider border-black">
+                  </li>
+                  <li><a class="dropdown-item text-light bg-dark bg-opacity-80" href="Metplayload.html"><i
+                        class="bi bi-arrow-bar-down"></i> Dowload</a></li>
+                </ul>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="ms-auto d-none d-lg-flex align-items-center">
             <div class="btn-group border border-light">
 
               <div class="btn-group dropstart">
@@ -72,11 +106,13 @@
       <div class="row row-cols-1 row-cols-md-2 g-4">
 
         <div class="col">
-          <div class="card h-100 bg-dark bg-opacity-80 border border-black text-light">
-            <video width="640" height="360" controls poster="1343828.png">
-              <source src="Grand Theft Auto VI Trailer 2 - Rockstar Games (2160p, av1, youtube).mp4" type="video/mp4">
-              Seu navegador não suporta o elemento de vídeo.
-            </video>
+          <div class="card gta h-100 bg-dark bg-opacity-80 border border-black text-light">
+            <div class="ratio ratio-16x9">
+              <video width="640" height="360" controls poster="1343828.png">
+                <source src="Grand Theft Auto VI Trailer 2 - Rockstar Games (2160p, av1, youtube).mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+              </video>
+            </div>
             <div class="card-body">
               <h5 class="card-title">GTA 6 é adiado pela segunda vez!</h5>
               <p class="card-text">A Take-Two Interactive adiou o lançamento de "Grand Theft Auto VI" ("GTA 6") para 19
@@ -122,22 +158,25 @@
             <div class="btn-group mt-auto">
               <a href="Metplaycarrinhol.html" class="btn btn-primary active" aria-current="page">Adquira Já</a>
               <a href="Metplaycarrinhol.html" class="btn btn-primary"><i class="bi bi-gift-fill"></i></a>
-              <a href="#" id="btndesejo" class="btn btn-primary"><i class="bi bi-bookmark-plus-fill"></i></a>
+              <a href="#" id="btndesejo" class="btn btn-primary" data-nome="LEGO® BATMAN: LEGACY OF THE DARK KNIGHT"
+                data-id="7"><i class="bi bi-bookmark-plus-fill"></i></a>
             </div>
           </div>
         </div>
         <div class="card bg-dark bg-opacity-80 border border-black text-light">
-          <img src="wwe-capa.jpg" class="card-img-top" alt="..." style="height:300px; object-fit:cover;">
+          <img src="007.jpg" class="card-img-top" alt="..." style="height:300px; object-fit:cover;">
           <div class="card-body">
-            <h5 class="card-title">WWE 2K26</h5>
-            <p class="card-text">Entre no ringue com gráficos aprimorados, novos movimentos e uma jogabilidade ainda
-              mais realista. Crie sua própria superestrela, enfrente grandes nomes da WWE e viva combates intensos em
-              modos online e offline cheios de ação.</p>
-            <p><i>R$349,00</i></p>
+            <h5 class="card-title">007 First Light</h5>
+            <p class="card-text">Conquiste o Número. 007 First Light é um emocionante jogo de ação e aventura de
+              espionagem da IO Interactive. Acompanhe James Bond como um jovem, engenhoso e, às vezes, imprudente
+              recruta no programa de treinamento do MI6 e descubra a história de origem do espião mais famoso do mundo.
+            </p>
+            <p><i>R$299,90</i></p>
             <div class="btn-group mt-auto">
               <a href="Metplaycarrinhol.html" class="btn btn-primary active" aria-current="page">Adquira Já</a>
               <a href="Metplaycarrinhol.html" class="btn btn-primary"><i class="bi bi-gift-fill"></i></a>
-              <a href="#" id="btndesejo" class="btn btn-primary"><i class="bi bi-bookmark-plus-fill"></i></a>
+              <a href="#" id="btndesejo" class="btn btn-primary" data-nome="007 First Light" data-id="8"><i
+                  class="bi bi-bookmark-plus-fill"></i></a>
             </div>
           </div>
         </div>

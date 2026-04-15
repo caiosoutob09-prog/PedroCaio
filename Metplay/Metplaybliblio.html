@@ -18,45 +18,90 @@
 <body style="background-color: rgb(18, 19, 22);">
 
   <div>
-     <nav class="navbar navbar-expand-lg text-light bg-dark bg-opacity-80 border border-black ">
-      <div class="container-fluid">
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <img src="Lgompwt_sf.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-          <a href="Metplayhome.html " class="nav-link text-light"> <b>PLAY</b>met </a>
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-opacity-80 border border-black fixed-top">
+        <div class="container-fluid">
+
+          <a class="navbar-brand d-flex align-items-center text-light" href="Metplayhome.html">
+            <img src="Lgompwt_sf.png" width="30" height="24" class="me-2">
+            <b>PLAY</b>met
+          </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <div class="navbar-nav">
-            <a class="nav-link active text-light" aria-current="page" href="Metplayhome.html">Descobrir</a>
-            <a class="nav-link text-light" href="Metplayprocurar.html">Procurar</a>
-            <a class="nav-link text-light" href="Metplaynovidades.html">Novidades</a>
-          </div>
-          <div class="navbar-nav ms-auto">
-            <!-- Example split danger button -->
-            <div class="btn-group border border-light">
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 
-              <div class="btn-group dropstart">
-                <button type="button" class="btn text-light dropdown-toggle dropdown-toggle-split"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  <span class="visually-hidden"></span>
-                </button>
-                <ul class="dropdown-menu text-light bg-dark bg-opacity-80 border border-black ">
-                  <li><a class="dropdown-item text-light bg-dark bg-opacity-80" href="Metplaybliblio.html"><i class="bi bi-book-fill"></i> Bliblioteca </a></li>
-                  <li><a class="dropdown-item text-light bg-dark bg-opacity-80" href="Metplaydesejo.html"><i class="bi bi-bookmark-fill"></i> Lista de desejos</a></li>
-                  <li><a class="dropdown-item text-light bg-dark bg-opacity-80" href="Metplaycarrinhol.html"><i class="bi bi-cart-fill"></i> Carrinho</a></li>
-                  <li>
-                    <hr class="dropdown-divider border-black">
-                  </li>
-                  <li><a class="dropdown-item text-light bg-dark bg-opacity-80" href="Metplayload.html"><i class="bi bi-arrow-bar-down"></i> Dowload</a></li>
-                </ul>
-                <a class="btn text-light" href="Metplayperfil.html" role="button"><i class="bi bi-person-circle"></i> Perfil</a>
+            <div class="navbar-nav">
+              <a class="nav-link active text-light" aria-current="page" href="Metplayhome.html">Descobrir</a>
+              <a class="nav-link text-light" href="Metplayprocurar.html">Procurar</a>
+              <a class="nav-link text-light" href="Metplaynovidades.html">Novidades</a>
+            </div>
+
+             <div class="ms-auto d-block d-sm-none align-items-center">
+              <div class="btn-group border border-light">
+
+                <div class="btn-group ">
+                  <a class="btn text-light" href="Metplayperfil.html" role="button"><i class="bi bi-person-circle"></i>
+                    Perfil</a>
+                  <button type="button" class="btn text-light dropdown-toggle dropdown-toggle-split"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="visually-hidden"></span>
+                  </button>
+                  <ul class="dropdown-menu text-light bg-dark bg-opacity-80 border border-black ">
+                    <li><a class="dropdown-item text-light bg-dark bg-opacity-80" href="Metplaybliblio.html"><i
+                          class="bi bi-book-fill"></i> Bliblioteca </a></li>
+                    <li><a class="dropdown-item text-light bg-dark bg-opacity-80" href="Metplaydesejo.html"><i
+                          class="bi bi-bookmark-fill"></i> Lista de desejos</a></li>
+                    <li><a class="dropdown-item text-light bg-dark bg-opacity-80" href="Metplaycarrinhol.html"><i
+                          class="bi bi-cart-fill"></i> Carrinho</a></li>
+                    <li>
+                      <hr class="dropdown-divider border-black">
+                    </li>
+                    <li><a class="dropdown-item text-light bg-dark bg-opacity-80" href="Metplayload.html"><i
+                          class="bi bi-arrow-bar-down"></i> Dowload</a></li>
+                  </ul>
+                  
+                </div>
+              </div>
+            </div>
+            
+            <div class="ms-auto d-none d-lg-flex align-items-center">
+              <div class="btn-group border border-light">
+
+                <div class="btn-group dropstart">
+                  <button type="button" class="btn text-light dropdown-toggle dropdown-toggle-split"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="visually-hidden"></span>
+                  </button>
+                  <ul class="dropdown-menu text-light bg-dark bg-opacity-80 border border-black ">
+                    <li><a class="dropdown-item text-light bg-dark bg-opacity-80" href="Metplaybliblio.html"><i
+                          class="bi bi-book-fill"></i> Bliblioteca </a></li>
+                    <li><a class="dropdown-item text-light bg-dark bg-opacity-80" href="Metplaydesejo.html"><i
+                          class="bi bi-bookmark-fill"></i> Lista de desejos</a></li>
+                    <li><a class="dropdown-item text-light bg-dark bg-opacity-80" href="Metplaycarrinhol.html"><i
+                          class="bi bi-cart-fill"></i> Carrinho</a></li>
+                    <li>
+                      <hr class="dropdown-divider border-black">
+                    </li>
+                    <li><a class="dropdown-item text-light bg-dark bg-opacity-80" href="Metplayload.html"><i
+                          class="bi bi-arrow-bar-down"></i> Dowload</a></li>
+                  </ul>
+                  <a class="btn text-light" href="Metplayperfil.html" role="button"><i class="bi bi-person-circle"></i>
+                    Perfil</a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-    </nav>
+      </nav>
+      <div>
+
+      <h1 class="text-light text-center" style="margin-top: 75px;">Seus games</h1>
+
+      <hr class="text-light">
+
+      <h4 class="text-secondary text-center">Bliblioteca não possui nenhum jogo <i class="bi bi-tornado"></i></h4>
+    </div>
     </div>
 
 </body>
